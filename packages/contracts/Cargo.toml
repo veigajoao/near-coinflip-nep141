@@ -1,7 +1,8 @@
 [workspace]
 #Add location of contracts here
 members = [
-    "./contract",
+    "./coin_flip",
+    "./test_token"
 ]
 
 [profile.release]
