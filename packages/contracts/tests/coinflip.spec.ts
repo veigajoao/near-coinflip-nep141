@@ -75,6 +75,9 @@ describe("Greeting Contract Integration Tests", () => {
       account_id: user.accountId,
       amount: utils.format.parseNearAmount("100"),
     });
+
+    expect(await coinflipContractAccount.exists()).toBe(true);
+    expect(await tokenContractAccount.exists()).toBe(true);
   });
 
   afterAll(async () => {
